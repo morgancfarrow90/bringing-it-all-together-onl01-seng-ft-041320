@@ -7,7 +7,11 @@ class Dog
     self.id ||= nil
   end
   
-  
+  def self.create_table
+    sql = "CREATE TABLE IF NONE EXISTS dogs (id INTEGER PRIMARY KEY, name TEXT, breed TEXT);"
+    
+    DB[:comm].execute(sql)
+  end
   
   
   
