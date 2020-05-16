@@ -11,6 +11,7 @@ class Dog
     CREATE TABLE IF NONE EXISTS dogs 
     (id INTEGER PRIMARY KEY, name TEXT, breed TEXT);
     SQL
+    
     DB[:comm].execute(sql)
   end
   
